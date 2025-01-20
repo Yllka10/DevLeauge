@@ -1,53 +1,57 @@
-body{
+body {
     background-color: rgb(255, 196, 0);
 }
-#navbari{
-   margin-top: 40px;
-   margin-right: 40px;
-display: flex;
-font-weight: bold;
-margin-left: 150px;
-}
-.icon{
+
+/* qe tash qitu me display flex i kom ba e jo me inline css se ashtu ma keq doket edhe ma shtir se per secilen vet duhet */
+#navbari {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    font-weight: bold;
 }
-.logo{
-    top: 50px;
-    height: 70px;
-    width: 70px;
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
     background-color: black;
     color: white;
-    display: flex;
-    margin-left: 500px;
+    padding: 10px 20px;
 }
-.foto{
+
+.TP {
+    margin: 120px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.foto {
     position: relative;
-    width: 100%;
     max-width: 600px;
-    margin-top: 450px;
-    position: relative;
-    right: 150%;
-    white-space: nowrap ;
+    margin: 50px auto;
 }
+
 .foto img {
     width: 100%;
     height: auto;
- 
 }
-.text-overlay{
+
+.text-overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-  text-align: start;
-  
-}
-.TP{
-    margin-top: 120px;
-    position: relative;right: 87%; 
-    white-space: nowrap;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
 }
 
-
+/* nese skupton najsen veq shkrum edhe ta shpjegoj */
