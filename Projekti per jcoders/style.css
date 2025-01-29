@@ -1,0 +1,220 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+
+#navbari {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1f1f1f;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#navbari .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.nav-item {
+    margin: 0 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #ff6600;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+
+.TP {
+    text-align: center;
+    padding: 100px 20px 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.TP h1 {
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.TP p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+.parallax {
+    background-image: url('Images/Muzeu.jpg');
+    height: 500px; 
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-content {
+    text-align: center;
+}
+
+.parallax h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.parallax p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 100px;
+    padding: 40px 20px;
+}
+
+
+.foto {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+
+.foto:hover {
+    transform: scale(1.05);
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.text-overlay p {
+    font-size: 1.1rem;
+}
+
+.view-more-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background-color: #ff8c1a;
+}
+
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer .social-links a {
+    color: #ff6600;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: white;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    margin: 10% auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .parallax h2 {
+        font-size: 2rem;
+    }
+
+    .parallax p {
+        font-size: 1rem;
+    }
+}
